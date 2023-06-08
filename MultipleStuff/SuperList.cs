@@ -13,5 +13,17 @@ namespace MultipleStuff
             max = this.Max();
             min = this.Min();
         }
+        
+        //  return the max and min values in the list a specific class
+        public MaxMin GetMaxMin2()
+        {
+            return new MaxMin() { Max = this.Max(), Min = this.Min() };
+        }
+
+        public class MaxMin
+        {
+            public double Max { get; set; }
+            public double Min { get; set; }
+        }
     }
 }
