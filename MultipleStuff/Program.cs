@@ -21,6 +21,10 @@ namespace MultipleStuff
             // Call the GetMaxMin3 method with a reference tuple
             Tuple<double, double> maxMinTuple = SuperList.GetMaxMin3(list);
             Console.WriteLine($"Version 3 - Max: {maxMinTuple.Item1}, Min: {maxMinTuple.Item2}");
+
+            // Call the GetMaxMin4 method with a value tuple
+            (double max2, double min2) = SuperList.GetMaxMin4(list);
+            Console.WriteLine($"Version 4 - Max: {max2}, Min: {min2}");
         }
     }
 }
