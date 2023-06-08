@@ -11,7 +11,10 @@ namespace Palindrome
 
         private bool isPalindrome(string word)
         {
-            
+            if (word == null)
+            {
+                throw new ArgumentNullException(nameof(word));
+            }
         }
     }
 }
