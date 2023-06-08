@@ -25,5 +25,11 @@ namespace MultipleStuff
             public double Max { get; set; }
             public double Min { get; set; }
         }
+
+        // return the max and min values in the list as a reference tuple
+        public static Tuple<double, double> GetMaxMin3(SuperList list)
+        {
+            return new Tuple<double, double>(list.Max(), list.Min());
+        }
     }
 }
