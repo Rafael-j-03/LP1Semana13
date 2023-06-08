@@ -15,6 +15,10 @@ namespace Palindrome
             {
                 throw new ArgumentNullException(nameof(word));
             }
+            else if (word.Length < 2)
+            {
+                return true
+            }
         }
     }
 }
