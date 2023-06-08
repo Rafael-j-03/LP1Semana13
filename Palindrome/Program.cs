@@ -8,5 +8,10 @@ namespace Palindrome
         {
             
         }
+
+        private bool isPalindrome(string word)
+        {
+            
+        }
     }
 }
